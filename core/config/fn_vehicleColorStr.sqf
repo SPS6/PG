@@ -43,6 +43,7 @@ switch (_vehicle) do
 			case 7: {_color = "Black"};
 			case 8: {_color = "Police"};
 			case 9: {_color = "Rebel"};
+			case 10: {_color = "Medic"};
 		};
 	};
 	
@@ -57,6 +58,7 @@ switch (_vehicle) do
 			case 4: {_color = "Tan"};
 			case 5: {_color = "Green"};
 			case 6: {_color = "Police"};
+			case 7: {_color = "Medic"};
 		};
 	};
 	
@@ -162,6 +164,22 @@ switch (_vehicle) do
 		};
 	};
 	
+	case "B_G_Offroad_01_armed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Rebel"};
+		};
+	};
+	
+		case "B_Heli_Light_01_armed_F":
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Rebel"};
+		};
+	};
+	
 	case "O_MRAP_02_F":
 	{
 		switch (_index) do
@@ -226,6 +244,7 @@ switch (_vehicle) do
 		switch (_index) do
 		{
 			case 0: {_color = "Police"};
+			case 1: {_color = "Rebel"};
 		};
 	};
 			

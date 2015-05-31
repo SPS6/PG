@@ -33,7 +33,8 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport04_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
-			["textures\cops\apd_hatchback.paa","cop"]
+			["textures\cops\apd_hatchback.paa","cop"],
+			["textures\medics\ems_hatchback.paa","med"]
 		];
 	};
 		
@@ -67,7 +68,8 @@ switch (_vehicle) do
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base08_co.paa","civ"],
 			["\a3\soft_f_gamma\Hatchback_01\data\hatchback_01_ext_base09_co.paa","civ"],
 			["textures\cops\apd_hatchback.paa","cop"],
-			["textures\rebels\rebel_hatchback.paa","reb"]
+			["textures\rebels\rebel_hatchback.paa","reb"],
+			["textures\medics\ems_hatchback.paa","med"]
 		];
 	};
 	
@@ -137,7 +139,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_sunset_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_vrana_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
-			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
+			["textures\rebels\rebel_hummingbird.paa","reb"],
 			["textures\medics\ems_hummingbird.paa","med"]
 		];
 	};
@@ -161,6 +163,14 @@ switch (_vehicle) do
 		_ret = 
 		[
 			["textures\cops\apd_hunter0.paa","cop","textures\cops\apd_hunter1.paa"]
+		];
+	};
+	
+		case "B_G_Offroad_01_armed_F":
+	{
+		_ret = 
+		[
+			["textures\rebels\rebel_offroad.paa","reb"]
 		];
 	};
 	
@@ -198,6 +208,14 @@ switch (_vehicle) do
 		];
 	};
 	
+	case "B_Heli_Light_01_armed_F":
+	{
+		_ret = 
+		[
+			["textures\rebels\rebel_hummingbird.paa","reb"]
+		];
+	};
+	
 	case "O_Heli_Attack_02_black_F":
 	{
 		_ret = 
@@ -210,7 +228,8 @@ switch (_vehicle) do
 	{
 		_ret = 
 		[
-			["textures\cops\apd_hellcat.paa","cop"]
+			["textures\cops\apd_hellcat.paa","cop"],
+			["textures\rebels\rebel_hellcat.paa","reb"]
 		];
 	};
 				

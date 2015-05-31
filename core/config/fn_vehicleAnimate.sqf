@@ -57,6 +57,16 @@ if(!_preset) then
 			_vehicle setVariable["lights",false,true];
 		};
 		
+		case "rebel_offroad":
+		{
+			if(typeOf _vehicle == "C_Offroad_01_F") then {
+				waitUntil {!isNil {_vehicle getVariable "Life_VEH_color"}};
+			};
+			_vehicle animate ["HideBackpacks", 0];
+			_vehicle animate ["hideDoor3", 0];
+			_vehicle animate ["hideConstruction", 0];
+		};
+		
 		case "cop_offroad":
 		{
 			if(typeOf _vehicle == "C_Offroad_01_F") then {

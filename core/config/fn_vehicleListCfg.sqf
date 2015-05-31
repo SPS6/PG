@@ -111,11 +111,11 @@ switch (_shop) do
 			_return pushBack
 			["C_SUV_01_F",40000];
 			_return pushBack
-			["C_Heli_light_01_ion_F",75000];
+			["B_Heli_Light_01_armed_F",75000];
 			_return pushBack
 			["O_Heli_Light_02_unarmed_F",850000];
 			_return pushBack
-			["I_Heli_light_03_unarmed_F",1000000];
+			["I_Heli_light_03_F",1000000];
 		};
 	};
 	
@@ -152,7 +152,7 @@ switch (_shop) do
 		_return pushBack
 		["C_Heli_light_01_ion_F",75000];
 		_return pushBack
-		["I_Heli_light_03_unarmed_F",350000];
+		["I_Heli_light_03_F",350000];
 		_return pushBack
 		["O_Heli_Light_02_unarmed_F",500000];
 		if(__GETC__(life_coplevel) > 2) then
