@@ -34,7 +34,8 @@ switch (_vehicle) do
 			[_path + "hatchback_01_ext_sport05_co.paa","civ"],
 			[_path + "hatchback_01_ext_sport06_co.paa","civ"],
 			["textures\cops\apd_hatchback.paa","cop"],
-			["textures\medics\ems_hatchback.paa","med"]
+			["textures\medics\ems_hatchback.paa","med"],
+			["textures\rebels\rebel_hatchback.paa","reb"]
 		];
 	};
 		

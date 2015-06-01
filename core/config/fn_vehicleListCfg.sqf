@@ -69,7 +69,8 @@ switch (_shop) do
 			["C_Hatchback_01_F",9500],
 			["C_Offroad_01_F",12500],
 			["C_SUV_01_F",35000],
-			["C_Van_01_transport_F",40000]
+			["C_Van_01_transport_F",40000],
+			["C_Hatchback_01_sport_F",65000]
 		];
 	};
 	
@@ -107,7 +108,7 @@ switch (_shop) do
 			_return pushBack
 			["B_Heli_Light_01_F",800000];
 			_return pushBack
-			["C_Hatchback_01_F",65000];
+			["C_Hatchback_01_F",9500];
 			_return pushBack
 			["C_SUV_01_F",40000];
 			_return pushBack
@@ -116,6 +117,8 @@ switch (_shop) do
 			["O_Heli_Light_02_unarmed_F",850000];
 			_return pushBack
 			["I_Heli_light_03_F",1000000];
+			_return pushBack
+			["C_Hatchback_01_sport_F",65000];			
 		};
 	};
 	
