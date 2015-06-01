@@ -5,6 +5,7 @@
 	Description:
 	Clears the vehicle of ammo types that we don't want.
 */
+
 private["_vehicle","_veh"];
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 if(isNull _vehicle) exitWith {}; //DAFUQ
@@ -25,30 +26,26 @@ if(_veh == "O_Heli_Attack_02_black_F") then
 	_vehicle removeMagazinesTurret ["8Rnd_LG_scalpel",[0]];
 	_vehicle removeMagazinesTurret ["38Rnd_80mm_rockets",[0]];
 };
-
-
 if(_veh == "B_Heli_Transport_01_F") then 
 {
 	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[1]];
 	_vehicle removeMagazinesTurret ["2000Rnd_65x39_Belt_Tracer_Red",[2]];
 };
-
 if(_veh == "I_Heli_light_03_F") then 
 {
 	_vehicle removeMagazinesTurret ["5000Rnd_762x51_Yellow_Belt",[-1]];
-	_vehicle removeMagazinesTurret ["224Rnd_missiles",[-1]];
-	_vehicle removeWeaponsTurret ["M134_minigun",[-1]];
-	_vehicle removeWeaponsTurret ["missiles_DAR",[-1]];
-	
+	_vehicle removeMagazinesTurret ["24Rnd_missiles",[-1]];
+	_vehicle removeWeaponTurret ["M134_minigun",[-1]];
+	_vehicle removeWeaponTurret ["missiles_DAR",[-1]];
 	_vehicle setVehicleAmmo 0;
 	_vehicle setVehicleAmmoDef 0;
 };
-
 if(_veh == "B_Heli_Light_01_armed_F") then 
 {
 	_vehicle removeMagazinesTurret ["5000Rnd_762x51_Belt",[1]];
 	_vehicle removeMagazinesTurret ["24Rnd_missiles",[2]];
-	
+	_vehicle removeWeaponTurret ["M134_minigun",[-1]];
+	_vehicle removeWeaponTurret ["missiles_DAR",[-1]];
 	_vehicle setVehicleAmmo 0;
 	_vehicle setVehicleAmmoDef 0;	
 };
