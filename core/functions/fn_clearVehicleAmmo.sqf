@@ -35,14 +35,22 @@ if(_veh == "B_Heli_Transport_01_F") then
 
 if(_veh == "I_Heli_light_03_F") then 
 {
-	_vehicle removeMagazinesTurret ["5000Rnd_762x51_Yellow_Belt",[1]];
-	_vehicle removeMagazinesTurret ["224Rnd_missiles",[2]];
+	_vehicle removeMagazinesTurret ["5000Rnd_762x51_Yellow_Belt",[-1]];
+	_vehicle removeMagazinesTurret ["224Rnd_missiles",[-1]];
+	_vehicle removeWeaponsTurret ["M134_minigun",[-1]];
+	_vehicle removeWeaponsTurret ["missiles_DAR",[-1]];
+	
+	_vehicle setVehicleAmmo 0;
+	_vehicle setVehicleAmmoDef 0;
 };
 
 if(_veh == "B_Heli_Light_01_armed_F") then 
 {
 	_vehicle removeMagazinesTurret ["5000Rnd_762x51_Belt",[1]];
 	_vehicle removeMagazinesTurret ["24Rnd_missiles",[2]];
+	
+	_vehicle setVehicleAmmo 0;
+	_vehicle setVehicleAmmoDef 0;	
 };
 
 clearWeaponCargoGlobal _vehicle;
